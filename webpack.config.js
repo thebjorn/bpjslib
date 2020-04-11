@@ -12,15 +12,17 @@ const common_settings = {
     entry: {
         bpjslib: './src/index.js',
     },
-    target: 'web',
+    // target: 'web',
+    target: 'node',
 
     output: {
         path: path.resolve(__dirname, 'lib/'),
         filename: '[name].min.js',
         chunkFilename: '[name].bundle.js',
         library: LIBRARY_NAME,
-        libraryTarget: "var",
-        libraryExport: 'default',
+        libraryTarget: "umd",
+        // libraryTarget: "var",
+        // libraryExport: 'default',
     },
 
     optimization: {
@@ -58,12 +60,13 @@ const common_settings = {
 };
 
 const dev_settings = merge(common_settings, {
-    mode: 'development',   // production, none
-    devtool: 'cheap-module-eval-source-map',      // original source
+    // mode: 'development',   // production, none
+    mode: 'production',
+    // devtool: 'cheap-module-eval-source-map',      // original source
 
     output: {
         // filename: 'bpjslib/[name].min.js',
-        filename: '[name].min.js',
+        filename: '[name].js',
     },
 });
 
