@@ -1,6 +1,6 @@
 {
   "name": "bpjslib",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "main": "lib/bpjslib.js",
   "repository": "https://github.com/thebjorn/bpjslib.git",
   "author": "thebjorn <bp@norsktest.no>",
