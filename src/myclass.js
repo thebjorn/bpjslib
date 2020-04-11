@@ -20,7 +20,7 @@ class Base {
         } else {
             props = args;
         }
-        if (is.isProps(props)) {
+        if (isProps(props)) {
             for (const attr in props) if (props.hasOwnProperty(attr)) {
                 let propval = props[attr];
                 this[attr] = propval;
