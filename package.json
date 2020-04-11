@@ -6,6 +6,7 @@
   "author": "thebjorn <bp@norsktest.no>",
   "license": "MIT",
   "scripts": {
+    "prepublish": "webpack",
     "test": "jest --coverage",
     "coverage": "jest --coverage && start build/coverage/index.html",
     "docs": "jsdoc -r -P ./package.json -R ./README.md src -d ./out --verbose && start out/index.html",

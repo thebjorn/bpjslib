@@ -15,7 +15,7 @@ const common_settings = {
     target: 'web',
 
     output: {
-        path: path.resolve(__dirname, 'dist/'),
+        path: path.resolve(__dirname, 'lib/'),
         filename: '[name].min.js',
         chunkFilename: '[name].bundle.js',
         library: LIBRARY_NAME,
@@ -62,7 +62,8 @@ const dev_settings = merge(common_settings, {
     devtool: 'cheap-module-eval-source-map',      // original source
 
     output: {
-        filename: 'bpjslib/[name].min.js',
+        // filename: 'bpjslib/[name].min.js',
+        filename: '[name].min.js',
     },
 });
 
@@ -71,7 +72,8 @@ const prod_settings = merge(common_settings, {
     devtool: 'source-map',
 
     output: {
-        filename: 'bpjslib/[name].[contenthash].min.js',
+        // filename: 'bpjslib/[name].[contenthash].min.js',
+        filename: '[name].[contenthash].min.js',
     },
 });
 
