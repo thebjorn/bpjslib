@@ -15,7 +15,7 @@ class Base {
         let props = {};
         if (args.length === 1) {
             props = args[0];
-        } else if (Array.from(args).every(a => is.isProps(a))) {
+        } else if (Array.from(args).every(a => isProps(a))) {
             props = Object.assign(props, ...args);
         } else {
             props = args;
