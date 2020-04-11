@@ -1,0 +1,13 @@
+_schema: https://static.datakortet.no/schema/dkbuild.schema.yaml
+
+package:
+  name: bpjslib
+  description: sample javascript library (for testing)
+  version: 1.0.0
+  created: 2020
+
+build:
+  venv: bpjslib
+
+directories:
+  source_js: src
