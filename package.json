@@ -1,7 +1,7 @@
 {
   "name": "bpjslib",
-  "version": "1.0.3",
-  "main": "lib/bpjslib.min.js",
+  "version": "1.0.4",
+  "main": "lib/bpjslib.js",
   "repository": "https://github.com/thebjorn/bpjslib.git",
   "author": "thebjorn <bp@norsktest.no>",
   "license": "MIT",
